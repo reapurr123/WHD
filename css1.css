@@ -1,0 +1,19 @@
+		html  {
+			scroll-behavior: smooth;
+		}
+
+		li  {
+			text-decoration: none;
+			display: inline-block;
+			padding: 10px 15px;
+		}
+
+		.left  {
+			float: left;
+      padding-bottom: none;
+		}
+
+		.right  {
+			float: right;
+      font-weight: bolder;
+		}

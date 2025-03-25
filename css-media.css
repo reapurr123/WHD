@@ -1,0 +1,65 @@
+    @media screen and (max-width: 768px) {
+  .hsc {
+    flex: 0 1 80%; /* each box takes up more width on tablets and small screens */
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hsc {
+    flex: 0 1 100%; /* on very small screens, each box is full width */
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  .pain-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .pain-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pain-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pain-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+/* Responsive: Stack columns on smaller screens */
+@media screen and (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text {
+    padding-top: 0;
+  }
+}

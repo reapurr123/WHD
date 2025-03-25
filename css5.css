@@ -1,0 +1,88 @@
+.row1 {
+  display: flex;
+  justify-content: center; /* center them as a group */
+  gap: 30px; /* add equal spacing between boxes */
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  padding: 40px 20px;
+}
+
+.hsc {
+  flex: 1 1 250px; /* each box minimum width 250px, grows if space */
+  max-width: 300px; /* prevents them from getting too big */
+}
+
+.column1 {
+  border: 2px solid darkblue;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+        table  {
+          border-style: hidden;
+          row-gap: 10px;
+          column-gap: 10px;
+          table-layout: box;
+          font-weight: bold;
+          width: 100%;
+          font-size: 24px;
+          font-family: Funnel Display
+        }
+
+        td  {
+          padding: 20px 20px;
+        }
+
+        .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 20px;
+  padding: 40px 60px;  /* top-bottom: 40px, left-right: 60px */
+  margin: 0 auto;
+  max-width: 1400px; /* stops it from getting too stretched on ultra-wide screens */
+  background-image: linear-gradient(to bottom right, #d4eaff, #ffffff);
+  border-radius: 12px;
+}
+
+.pain-grid div {
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: lightgray;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pain-grid div img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.pain-grid div:hover img {
+  transform: scale(1.05);
+}
+
+.pain-grid div p {
+  font-weight: 600;
+  color: #003366;
+  margin-top: 5px;
+}
